@@ -1,10 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.test {
-  color: red;
+/* убираем полосу прокрутки gg12 39 min:*/
+html::-webkit-scrollbar {
+  display: none;
 }
+html {
+  scrollbar-width: none;
+}
+/* .test {
+  color: red;
+} */
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
