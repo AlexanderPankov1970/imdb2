@@ -6,10 +6,11 @@ import React from "react";
 import { useSearchParams } from "next/navigation";
 
 export default function NavBarItem({ title, param }) {
+  //гидротация:
   const searchParams = useSearchParams();
   const genre = searchParams.get("genre");
 
-  console.log(2222, genre);
+  //console.log(2222, genre);
 
   return (
     <div>
